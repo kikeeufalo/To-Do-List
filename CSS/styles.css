@@ -13,7 +13,7 @@
 }
 
 .container {
-    width: 700px;
+    width: 600px;
     border: 1px solid var(--color-5);
     margin: 0 auto;
 }
@@ -24,20 +24,36 @@ body {
     font-size: 16pt;
 }
 
+fieldset {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+fieldset p {
+    margin: 0 0 5px 15px;
+    color: var(--color-5);
+    font-weight: 400;
+}
+
 header {
     display: flex;
     justify-content: center;
-    padding: 20px;
     margin-top: 30px;
+    width: 100%;
 }
 
 label {
     display: block;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
 }
 
 label input {
+    border-radius: 2px;
+    border: none;
     width: 100%;
+    padding: 4px;
+    font-size: 18px;
 }
 
 label textarea {
