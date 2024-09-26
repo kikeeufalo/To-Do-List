@@ -30,6 +30,16 @@ fieldset {
     border-bottom: 2px solid black;
 }
 
+fieldset input[type="button"] {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color-3);
+    color: whitesmoke;
+}
+
 fieldset p {
     margin: 0 0 5px 15px;
     color: var(--color-5);
@@ -58,4 +68,12 @@ label input {
 
 label textarea {
     width: 100%;
+}
+
+textarea {
+    height: 100px;
+    border: none;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 3px;
 }
