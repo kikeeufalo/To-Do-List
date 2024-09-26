@@ -30,6 +30,12 @@ fieldset {
     border-bottom: 2px solid black;
 }
 
+fieldset div {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
 fieldset input[type="button"] {
     padding: 5px;
     font-size: 14px;
@@ -38,6 +44,7 @@ fieldset input[type="button"] {
     border-radius: 3px;
     background-color: var(--color-3);
     color: whitesmoke;
+    margin-right: 30px;
 }
 
 fieldset p {
