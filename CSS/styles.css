@@ -1,5 +1,26 @@
+:root {
+    --color-1: #17f9ff;
+    --color-2: #00b4fc;
+    --color-3: #005bc5;
+    --color-4: #012677;
+    --color-5: #001449;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-2);
+    font: arial;
+    font-size: 16pt;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
 }
