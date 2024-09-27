@@ -15,10 +15,18 @@ function salvar() {
         tasks.style.display = 'block'
         taskTitulo.innerText = t
         taskDescricao.innerText = d
-        d.style.display = 'none'
+        taskDescricao.style.display = 'none'
     }else {
         alert("Insira o titulo e faça uma breve descrição")
     }
+}
+
+function mouseEnter() {
+    taskDescricao.style.display = 'block'
+}
+
+function mouseOut() {
+    taskDescricao.style.display = 'none'
 }
 
 /*
