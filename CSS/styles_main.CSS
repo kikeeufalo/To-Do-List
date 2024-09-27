@@ -3,6 +3,7 @@ main {
     height: auto;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 main div {
@@ -21,8 +22,13 @@ main div div {
     justify-content: center;
 }
 
-.separador {
+.separador { 
     width: 80%;
     border: 1px solid #00134938;
     margin: 5px;
+}
+
+main p {
+    padding: 10px;
+    margin-top: 10px;
 }
