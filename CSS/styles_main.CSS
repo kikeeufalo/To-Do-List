@@ -13,7 +13,9 @@ main div {
 }
 
 main input[type="checkbox"] {
-    
+    width: 100%;
+    height: 2em;
+    border: 0px;
 }
 
 main div div {
