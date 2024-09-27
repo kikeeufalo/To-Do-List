@@ -15,10 +15,12 @@
 .container {
     width: 600px;
     margin: 0 auto;
+    box-shadow: 1px 1px 40px var(--color-3);
+    background-color: var(--color-2);
 }
 
 body {
-    background-color: var(--color-2);
+    background-color: var(--color-3);
     font: arial;
     font-size: 16pt;
     height: 100vh;
