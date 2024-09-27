@@ -21,6 +21,9 @@ body {
     background-color: var(--color-2);
     font: arial;
     font-size: 16pt;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
 }
 
 fieldset {
