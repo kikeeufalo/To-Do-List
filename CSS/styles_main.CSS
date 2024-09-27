@@ -4,14 +4,14 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    background-color: var(--color-1);
-    border-radius: 30px;
 }
 
 main div {
     width: 400px;
     height: auto;
     text-align: center;
+    background-color: var(--color-1);
+    border-radius: 30px;
 }
 
 main input[type="checkbox"] {
