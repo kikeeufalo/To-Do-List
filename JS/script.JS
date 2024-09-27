@@ -12,13 +12,14 @@ function salvar() {
     let t = titulo.value
     let d = descricao.value
     if (t != '' && d != '') {
+        taskDescricao.style.display = 'none'
         tasks.style.display = 'block'
         taskTitulo.innerText = t
         taskDescricao.innerText = d
-        taskDescricao.style.display = 'none'
     }else {
         alert("Insira o titulo e faça uma breve descrição")
     }
+
 }
 
 function mouseEnter() {
