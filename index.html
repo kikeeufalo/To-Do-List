@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefas</title>
 </head>
-<body>
+<body onload="load()">
     <div class="container">
         <header>
             <fieldset>
@@ -21,15 +21,14 @@
                     <textarea id="descricao"></textarea>
                 </label>
                 <div>
-                    <input type="button" value="Salvar">
+                    <input type="button" value="Salvar" onclick="salvar()">
                 </div>
             </fieldset>
         </header>
         <main>
-            <div>
-                <h2>Titulo Teste</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, vero numquam qui ex id at, magnam exercitationem nihil reiciendis dolorem </p>
-                <input type="checkbox">
+            <div id="bloco-tasks">
+                <h2 id="task-titulo">Titulo Teste</h2>
+                <p id="task-descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, vero numquam qui ex id at, magnam exercitationem nihil reiciendis dolorem </p>
                 <div>
                     <div class="separador"></div>
                 </div>
@@ -45,5 +44,6 @@
    Uma pagina web que adiciona ‘tarefas’ e excluem, possivelmente deve haver um botão de adicionar, e uma para excluir a tarefa, e uma confirmação visual de que a tarefa foi comprida
 
     Ao clicar e segurar em uma tarefa ela sera excluida
+    Ao clicar somente uma vez a tarefa mudara a cor de fundo dando ao entender que esteja feita
 
 -->
