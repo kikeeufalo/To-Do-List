@@ -1,17 +1,17 @@
 main {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
     margin-top: 20px;
+    display: inline-block;
 }
 
 main div {
-    width: 400px;
+    width: 100%;
     height: auto;
     text-align: center;
     background-color: var(--color-1);
     border-radius: 30px;
+    margin-top: 10px;
 }
 
 main input[type="checkbox"] {
