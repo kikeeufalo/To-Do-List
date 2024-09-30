@@ -1,17 +1,19 @@
 let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
-const main = window.document.getElementById('main')
+let main = window.document.getElementById('main')
 
 function load() {
 }
 
 function salvar() {
+
+}
+
+function newElemnt() {
     const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
     const paragrafoDiv = document.createElement('p')
 
-    tituloDiv.textContent = 'teste'
-    paragrafoDiv.textContent = 'lorexqewxqweqwe'
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
     main.appendChild(newDiv)
