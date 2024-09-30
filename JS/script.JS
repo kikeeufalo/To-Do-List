@@ -2,11 +2,12 @@ let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
 
-function load() {
-}
-
 function salvar() {
-
+    if (titulo.value != '' && descricao.value != '') {
+        newElemnt()
+    }else {
+        window.alert("insira todos os dados para salvar")
+    }
 }
 
 function newElemnt() {
@@ -14,6 +15,9 @@ function newElemnt() {
     const tituloDiv = document.createElement('h2')
     const paragrafoDiv = document.createElement('p')
 
+    tituloDiv.textContent = titulo.value
+    paragrafoDiv.textContent = descricao.value
+    
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
     main.appendChild(newDiv)
