@@ -1,3 +1,9 @@
+let titulo = window.document.getElementById('titulo')
+let descricao = window.document.getElementById('descricao')
+
+const newDiv = window.document.getElementById('bloco-tasks')
+const tituloDiv = document.createElement('h2')
+const paragrafoDiv = document.createElement('p')
 
 function load() {
 }
