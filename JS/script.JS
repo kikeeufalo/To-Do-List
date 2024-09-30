@@ -33,9 +33,3 @@ function newElemnt() {
         tituloDiv.style.display = 'block'
     })
 }
-
-/*
-
-    Da pra colocar so uma linha nas tarefas deixando so o titulo amostra ao clicar em cima do titulo que seria a tarefa ele abriria a descrição
-
-*/
