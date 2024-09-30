@@ -21,7 +21,6 @@ function salvar() {
     }
     titulo.value = ''
     descricao.value = ''
-    titulo.
 }
 
 function mouseEnter() {
