@@ -16,6 +16,7 @@ function salvar() {
         tasks.style.display = 'block'
         taskTitulo.innerText = t
         taskDescricao.innerText = d
+        document.body.
     }else {
         alert("Insira o titulo e faça uma breve descrição")
     }
