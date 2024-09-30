@@ -19,7 +19,9 @@ function salvar() {
     }else {
         alert("Insira o titulo e faça uma breve descrição")
     }
-
+    titulo.value = ''
+    descricao.value = ''
+    titulo.
 }
 
 function mouseEnter() {
