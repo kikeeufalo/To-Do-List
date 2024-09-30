@@ -8,6 +8,9 @@ function salvar() {
     }else {
         window.alert("insira todos os dados para salvar")
     }
+
+    titulo.value = ''
+    descricao.value = ''
 }
 
 function newElemnt() {
