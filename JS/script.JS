@@ -21,7 +21,6 @@ function newElemnt() {
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
     main.appendChild(newDiv)
-    paragrafoDiv.style.display = 'none'
 }
 
 /*
