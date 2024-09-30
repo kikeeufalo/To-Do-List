@@ -21,12 +21,7 @@ function newElemnt() {
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
     main.appendChild(newDiv)
-}
-
-function mouseEnter() {
-}
-
-function mouseOut() {
+    paragrafoDiv.style.display = 'none'
 }
 
 /*
