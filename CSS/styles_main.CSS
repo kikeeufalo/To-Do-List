@@ -32,3 +32,8 @@ main p {
     font-size: 22px;
     font-weight: 500;
 }
+
+
+main p:active {
+    color: white;
+}
