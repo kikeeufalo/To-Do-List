@@ -21,6 +21,7 @@ function salvar() {
 
 function newElemnt() {
     let temporizador
+
     const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
     const paragrafoDiv = document.createElement('p')
