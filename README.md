@@ -1,3 +1,3 @@
 # To Do List
  
- - Uma Lista de Tarefas simples
+ - Uma Lista de Tarefas
