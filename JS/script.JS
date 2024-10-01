@@ -14,6 +14,7 @@ function salvar() {
 }
 
 function newElemnt() {
+    let temporizador
     const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
     const paragrafoDiv = document.createElement('p')
@@ -34,5 +35,19 @@ function newElemnt() {
     newDiv.addEventListener('mouseleave', function() {
         paragrafoDiv.style.display = 'none'
         tituloDiv.style.display = 'block'
+    })
+    // quando o mouse e precionado por 3 segundos remove a tarefa
+    newDiv.addEventListener('mousedown', function() {
+        temporizador = setTimeout(function() {
+            newDiv.remove()
+        }, 2000)
+    })
+    //quando o mouse sai da tarefa cancela o delete
+    newDiv.addEventListener('mouseleave', function() {
+        clearTimeout(temporizador)
+    })
+    //quando o mouse solta a tarefa tembem e calcelado o delete
+    newDiv.addEventListener('mouseup', function() {
+        clearTimeout(temporizador)
     })
 }
