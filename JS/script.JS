@@ -9,9 +9,7 @@ function salvar() {
         newElemnt()
         newElemnt()
         newElemnt()
-    }
-
-    if (titulo.value != '' && descricao.value != '') {
+    }else if (titulo.value != '' && descricao.value != '') {
         newElemnt()
     }else {
         window.alert("insira todos os dados para salvar")
