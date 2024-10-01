@@ -3,6 +3,14 @@ let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
 
 function salvar() {
+    if (titulo.value == 'Game') {
+        newElemnt()
+        newElemnt()
+        newElemnt()
+        newElemnt()
+        newElemnt()
+    }
+
     if (titulo.value != '' && descricao.value != '') {
         newElemnt()
     }else {
@@ -40,7 +48,7 @@ function newElemnt() {
     newDiv.addEventListener('mousedown', function() {
         temporizador = setTimeout(function() {
             newDiv.remove()
-        }, 2000)
+        }, 1000)
     })
     //quando o mouse sai da tarefa cancela o delete
     newDiv.addEventListener('mouseleave', function() {
