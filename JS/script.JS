@@ -51,3 +51,10 @@ function newElemnt() {
         clearTimeout(temporizador)
     })
 }
+
+/*
+
+lembrar de terminar os deletes das tarefas, e estilizar apara deixar mais agradavel.
+lembrar tambem de colocar um feito nas tarefas comcluidas.
+
+*/
