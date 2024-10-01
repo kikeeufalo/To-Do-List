@@ -52,10 +52,12 @@ function newElemnt() {
     //quando o mouse sai da tarefa cancela o delete
     newDiv.addEventListener('mouseleave', function() {
         clearTimeout(temporizador)
+        newDiv.style.background = '#17f9ff'
     })
     //quando o mouse solta a tarefa tembem e calcelado o delete
     newDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
+        newDiv.style.background = '#17f9ff'
     })
 }
 
