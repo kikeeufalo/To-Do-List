@@ -47,7 +47,7 @@ function newElemnt() {
         temporizador = setTimeout(function() {
             newDiv.remove()
         }, 1000)
-        newDiv.style.background = 'linear-gradient(blue, white, black)'
+        newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
     })
     //quando o mouse sai da tarefa cancela o delete
     newDiv.addEventListener('mouseleave', function() {
