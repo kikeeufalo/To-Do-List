@@ -65,6 +65,6 @@ function newElemnt() {
 /*
 
 lembrar de terminar os deletes das tarefas, e estilizar apara deixar mais agradavel.
-lembrar tambem de colocar um feito nas tarefas comcluidas.
+lembrar tambem de colocar um feito nas tarefas concluidas.
 
 */
