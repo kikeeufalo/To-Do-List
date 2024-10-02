@@ -14,6 +14,11 @@ main div {
     margin: 5px 0 5px 0;
 }
 
+main div h2 {
+    width: 100%;
+    height: auto;
+}
+
 main div div {
     width: 100%;
     display: flex;
