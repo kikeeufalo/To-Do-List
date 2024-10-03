@@ -19,12 +19,6 @@ main div h2 {
     height: auto;
 }
 
-main div div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 main p {
     padding: 6px;
     margin-top: 10px;
