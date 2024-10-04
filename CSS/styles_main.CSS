@@ -10,14 +10,13 @@ main div {
     height: 40px;
     text-align: center;
     background-color: var(--color-1);
-    border-radius: 7px;
     margin: 5px 0 5px 0;
 }
 
 main p {
     padding: 6px;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 20pt;
     font-weight: 500;
 }
 
