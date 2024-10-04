@@ -44,21 +44,24 @@ function newElemnt() {
         paragrafoDiv.style.display = 'none'
         tituloDiv.style.display = 'block'
     })
-    // quando o mouse e precionado por 3 segundos remove a tarefa
+    // quando o mouse é precionado por alguns segundos remove a tarefa
     newDiv.addEventListener('mousedown', function() {
         temporizador = setTimeout(function() {
             newDiv.remove()
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
-
-        tarefaConcluida = true
+        if (!tarefaConcluida) {
+            tarefaConcluida = true
+        } else {
+            tarefaConcluida = false
+        }
     })
     //quando o mouse sai da tarefa cancela o delete
     newDiv.addEventListener('mouseleave', function() {
         clearTimeout(temporizador)
 
         if (tarefaConcluida) {
-            newDiv.style.background = 'green'
+            newDiv.style.background = '#009929'
         }else {
             newDiv.style.background = '#17f9ff'
         }
@@ -66,7 +69,11 @@ function newElemnt() {
     //quando o mouse solta a tarefa tembem e calcelado o delete
     newDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
-        newDiv.style.background = '#17f9ff'
+        if (tarefaConcluida) {
+            newDiv.style.background = '#009929'
+        }else {
+            newDiv.style.background = '#17f9ff'
+        }
     })
 }
 
