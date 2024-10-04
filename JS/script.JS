@@ -1,6 +1,6 @@
 let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
-let main = window.document.getElementById('main')
+let listaTarefas = window.document.getElementById('lista-tarefas')
 
 function salvar() {
     if (titulo.value == 'Game') {
@@ -32,7 +32,7 @@ function newElemnt() {
     
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
-    main.appendChild(newDiv)
+    listaTarefas.appendChild(newDiv)
 
     paragrafoDiv.style.display = 'none'
     
