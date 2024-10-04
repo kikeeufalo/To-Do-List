@@ -1,8 +1,7 @@
 main {
     width: 100%;
     height: auto;
-    display: inline-block;
-    padding-bottom: 10px;
+    box-sizing: content-box;
 }
 
 main div {
