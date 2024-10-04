@@ -21,6 +21,7 @@ function salvar() {
 
 function newElemnt() {
     let temporizador
+    let tarefaConcluida = false
 
     const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
@@ -49,6 +50,8 @@ function newElemnt() {
             newDiv.remove()
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
+
+        tarefaConcluida = true
     })
     //quando o mouse sai da tarefa cancela o delete
     newDiv.addEventListener('mouseleave', function() {
