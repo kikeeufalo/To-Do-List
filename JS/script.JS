@@ -79,6 +79,6 @@ function newElemnt() {
 
 /*
 
-lembrar de colocar um feito nas tarefas concluidas.
-
+    Lembrte:  
+      arrumar uma forma de salvar os dados, as tarefas concluidas
 */
