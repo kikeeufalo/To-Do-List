@@ -2,9 +2,18 @@ let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
 
+function lerTarefas() {
+    let arrayCookie = document.cookie.split(';') // split divide um item em partes com base no delimitador fornecido 
+    for (i = 1; i <= arrayCookie.length; i++) {
+
+        newElemnt()
+    }
+}
+
 function salvar() {
     if (titulo.value != '' && descricao.value != '') {
-        document.cookie = `${titulo.value}=${descricao.value};`
+        document.cookie = `${titulo.value}=${descricao.value};` // salva as infomações em um cookie
+        newElemnt()
     }else {
         window.alert("insira todos os dados para salvar")
     }
