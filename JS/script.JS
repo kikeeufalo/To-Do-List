@@ -2,12 +2,13 @@ let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
 
-let cookies = 
-
 function salvar() {
+    save = localStorage
+    t = titulo.value
+    d = descricao.value
+
     if (titulo.value != '' && descricao.value != '') {
-        newElemnt()
-        cookies = newElemnt()
+        
     }else {
         window.alert("insira todos os dados para salvar")
     }
