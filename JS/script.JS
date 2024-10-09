@@ -3,12 +3,8 @@ let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
 
 function salvar() {
-    save = localStorage
-    t = titulo.value
-    d = descricao.value
-
     if (titulo.value != '' && descricao.value != '') {
-        
+        document.cookie = `${titulo.value}=${descricao.value};`
     }else {
         window.alert("insira todos os dados para salvar")
     }
