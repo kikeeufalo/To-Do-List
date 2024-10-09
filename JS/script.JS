@@ -2,15 +2,12 @@ let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
 
+let cookies = 
+
 function salvar() {
-    if (titulo.value == 'Game') {
+    if (titulo.value != '' && descricao.value != '') {
         newElemnt()
-        newElemnt()
-        newElemnt()
-        newElemnt()
-        newElemnt()
-    }else if (titulo.value != '' && descricao.value != '') {
-        newElemnt()
+        cookies = newElemnt()
     }else {
         window.alert("insira todos os dados para salvar")
     }
@@ -35,7 +32,7 @@ function newElemnt() {
     main.appendChild(newDiv)
 
     paragrafoDiv.style.display = 'none'
-    
+    // quando o mouse entra
     newDiv.addEventListener('mouseenter', function() {
         paragrafoDiv.style.display = 'block'
         tituloDiv.style.display = 'none'
