@@ -4,10 +4,13 @@ let main = window.document.getElementById('main')
 
 function lerTarefas() {
     let arrayCookie = document.cookie.split(';') // split divide um item em partes com base no delimitador fornecido 
-    for (i = 0; i <= arrayCookie.length; i++) {
+    for (i = 0; i < arrayCookie.length; i++) {
         titulo.value = arrayCookie[i]
+        descricao.value = arrayCookie[i]
         newElemnt()
     }
+    titulo.value = ''
+    descricao.value = ''
 }
 
 function salvar() {
