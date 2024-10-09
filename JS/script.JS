@@ -19,7 +19,7 @@ function lerTarefas() {
         descricao.value = descricaoC[i]
         newElemnt()
     }
-    
+
     titulo.value = ''
     descricao.value = ''
 }
@@ -97,5 +97,5 @@ function newElemnt() {
 /*
 
     Lembrte:  
-      arrumar uma forma de salvar os dados, as tarefas concluidas
+      arrumar o delete dos cookie
 */
