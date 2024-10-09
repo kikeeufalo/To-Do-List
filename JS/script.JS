@@ -19,10 +19,7 @@ function lerTarefas() {
         descricao.value = descricaoC[i]
         newElemnt()
     }
-
-    console.log(tituloC)
-    console.log(descricaoC)
-
+    
     titulo.value = ''
     descricao.value = ''
 }
