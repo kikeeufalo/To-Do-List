@@ -4,11 +4,25 @@ let main = window.document.getElementById('main')
 
 function lerTarefas() {
     let arrayCookie = document.cookie.split(';') // split divide um item em partes com base no delimitador fornecido 
-    for (i = 0; i < arrayCookie.length; i++) {
-        titulo.value = arrayCookie[i]
-        descricao.value = arrayCookie[i]
+    let tituloC = []
+    let descricaoC = []
+
+
+    arrayCookie.forEach(cookie => {
+        let partes = cookie.split('=') // separa por sinal de igualdade
+        tituloC.push(partes[0]) 
+        descricaoC.push(partes[1])
+    })
+
+    for (i = 0; i < arrayCookie.length; i++) { //mostra os cookies de tarefas salvas pegando por indice
+        titulo.value = tituloC[i]
+        descricao.value = descricaoC[i]
         newElemnt()
     }
+
+    console.log(tituloC)
+    console.log(descricaoC)
+
     titulo.value = ''
     descricao.value = ''
 }
