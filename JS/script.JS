@@ -29,6 +29,10 @@ function lerTarefas() {
 
     titulo.value = ''
     descricao.value = ''
+
+    /* 
+        Esta função esta separando os cookies e armazendo-os em um array, onde possa fazer a atribuição de valor correto
+    */
 }
 
 function salvar() {
