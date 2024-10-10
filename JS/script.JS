@@ -54,6 +54,7 @@ function delCookies(name) {
 function newElemnt() {
     let temporizador
     let tarefaConcluida = false
+    let nomeTask = ''
 
     const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
@@ -80,10 +81,11 @@ function newElemnt() {
 
     // quando o mouse é precionado
     newDiv.addEventListener('mousedown', function() {
+        nomeTask = titulo.value
         temporizador = setTimeout(function() {
 
             newDiv.remove()
-            delCookies()
+            delCookies('teste')
         
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
