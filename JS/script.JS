@@ -47,7 +47,8 @@ function salvar() {
     descricao.value = ''
 }
 
-function delAllCookie() {
+function delAllCookie(e) {
+    // remove o item
     temporizador = setTimeout(function() {
         newDiv.remove()
     }, 1000)
