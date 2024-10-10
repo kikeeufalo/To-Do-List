@@ -89,12 +89,9 @@ function newElemnt() {
 
     // quando o mouse é precionado
     newDiv.addEventListener('mousedown', function() {
-        let nameT = tituloDiv.value
         temporizador = setTimeout(function() {
-
             newDiv.remove()
-            delCookies(nameT)
-        
+            delCookies(tituloDiv.textContent)
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
         if (!tarefaConcluida) {
