@@ -115,5 +115,5 @@ function newElemnt() {
 /*
 
     Lembrte:  
-      arrumar o delete dos cookie
+    
 */
