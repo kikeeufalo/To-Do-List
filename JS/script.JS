@@ -93,7 +93,7 @@ function newElemnt() {
         temporizador = setTimeout(function() {
 
             newDiv.remove()
-            delCookies('teste')
+            delCookies()
         
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
