@@ -47,6 +47,18 @@ function salvar() {
     descricao.value = ''
 }
 
+function delAllCookie() {
+    temporizador = setTimeout(function() {
+        newDiv.remove()
+    }, 1000)
+    newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
+    if (!tarefaConcluida) {
+        tarefaConcluida = true
+    } else {
+        tarefaConcluida = false
+    }
+}
+
 function newElemnt() {
     let temporizador
     let tarefaConcluida = false
@@ -72,18 +84,8 @@ function newElemnt() {
         paragrafoDiv.style.display = 'none'
         tituloDiv.style.display = 'block'
     })
-    // quando o mouse é precionado por alguns segundos remove a tarefa
-    newDiv.addEventListener('mousedown', function() {
-        temporizador = setTimeout(function() {
-            newDiv.remove()
-        }, 1000)
-        newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
-        if (!tarefaConcluida) {
-            tarefaConcluida = true
-        } else {
-            tarefaConcluida = false
-        }
-    })
+    // quando o mouse é precionado
+    newDiv.addEventListener('mousedown', function() {delAllCookie()})
     //quando o mouse sai da tarefa cancela o delete
     newDiv.addEventListener('mouseleave', function() {
         clearTimeout(temporizador)
