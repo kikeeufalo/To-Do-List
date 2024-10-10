@@ -47,17 +47,8 @@ function salvar() {
     descricao.value = ''
 }
 
-function delAllCookie(e) {
-    // remove o item
-    temporizador = setTimeout(function() {
-        newDiv.remove()
-    }, 1000)
-    newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
-    if (!tarefaConcluida) {
-        tarefaConcluida = true
-    } else {
-        tarefaConcluida = false
-    }
+function delCookies(name) {
+    document.cookie = name + '=; Max-Age=0; path=/'
 }
 
 function newElemnt() {
@@ -76,6 +67,7 @@ function newElemnt() {
     main.appendChild(newDiv)
 
     paragrafoDiv.style.display = 'none'
+
     // quando o mouse entra
     newDiv.addEventListener('mouseenter', function() {
         paragrafoDiv.style.display = 'block'
@@ -85,9 +77,24 @@ function newElemnt() {
         paragrafoDiv.style.display = 'none'
         tituloDiv.style.display = 'block'
     })
+
     // quando o mouse é precionado
-    newDiv.addEventListener('mousedown', function() {delAllCookie()})
-    //quando o mouse sai da tarefa cancela o delete
+    newDiv.addEventListener('mousedown', function() {
+        temporizador = setTimeout(function() {
+
+            newDiv.remove()
+            delCookies()
+        
+        }, 1000)
+        newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
+        if (!tarefaConcluida) {
+            tarefaConcluida = true
+        } else {
+            tarefaConcluida = false
+        }
+    })
+
+    //quando o mouse sai
     newDiv.addEventListener('mouseleave', function() {
         clearTimeout(temporizador)
 
@@ -97,7 +104,8 @@ function newElemnt() {
             newDiv.style.background = '#17f9ff'
         }
     })
-    //quando o mouse solta a tarefa tembem e calcelado o delete
+
+    //quando o mouse solta
     newDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
         if (tarefaConcluida) {
