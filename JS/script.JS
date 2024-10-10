@@ -54,7 +54,6 @@ function delCookies(name) {
 function newElemnt() {
     let temporizador
     let tarefaConcluida = false
-    let nomeTask = ''
 
     const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
@@ -79,6 +78,13 @@ function newElemnt() {
     newDiv.addEventListener('mouseleave', function() {
         paragrafoDiv.style.display = 'none'
         tituloDiv.style.display = 'block'
+        clearTimeout(temporizador)
+
+        if (tarefaConcluida) {
+            newDiv.style.background = '#009929'
+        }else {
+            newDiv.style.background = '#17f9ff'
+        }
     })
 
     // quando o mouse é precionado
@@ -95,17 +101,6 @@ function newElemnt() {
             tarefaConcluida = true
         } else {
             tarefaConcluida = false
-        }
-    })
-
-    //quando o mouse sai
-    newDiv.addEventListener('mouseleave', function() {
-        clearTimeout(temporizador)
-
-        if (tarefaConcluida) {
-            newDiv.style.background = '#009929'
-        }else {
-            newDiv.style.background = '#17f9ff'
         }
     })
 
