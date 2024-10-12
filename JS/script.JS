@@ -111,9 +111,3 @@ function newElemnt() {
         }
     })
 }
-
-/*
-
-    Lembrte:  
-        melhorar o esfeito visual de completo e a caixa de tarefa se mesexndo
-*/
