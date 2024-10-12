@@ -55,45 +55,47 @@ function newElemnt() {
     let temporizador
     let tarefaConcluida = false
 
-    const newDiv = document.createElement('div')
+    const newElemnt = document.createElement('div')
     const tituloDiv = document.createElement('h2')
     const paragrafoDiv = document.createElement('p')
 
-    tituloDiv.textContent = titulo.value
+    const paragrafoTeste = document.createElement('p')
+
+    paragrafoDiv.textContent = titulo.value
     paragrafoDiv.textContent = descricao.value
     
-    newDiv.appendChild(tituloDiv)
-    newDiv.appendChild(paragrafoDiv)
-    main.appendChild(newDiv)
+    paragrafoDiv.appendChild(paragrafoDiv)
+    paragrafoDiv.appendChild(paragrafoDiv)
+    main.appendChild(paragrafoDiv)
 
     paragrafoDiv.style.display = 'none'
 
     // quando o mouse entra
-    newDiv.addEventListener('mouseenter', function() {
+    paragrafoDiv.addEventListener('mouseenter', function() {
         paragrafoDiv.style.display = 'block'
-        tituloDiv.style.display = 'none'
+        paragrafoDiv.style.display = 'none'
     })
 
     //quando o mouse sai
-    newDiv.addEventListener('mouseleave', function() {
+    paragrafoDiv.addEventListener('mouseleave', function() {
         paragrafoDiv.style.display = 'none'
-        tituloDiv.style.display = 'block'
+        paragrafoDiv.style.display = 'block'
         clearTimeout(temporizador)
 
         if (tarefaConcluida) {
-            newDiv.style.background = '#009929'
+            paragrafoDiv.style.background = '#009929'
         }else {
-            newDiv.style.background = '#17f9ff'
+            paragrafoDiv.style.background = '#17f9ff'
         }
     })
 
     // quando o mouse é precionado
-    newDiv.addEventListener('mousedown', function() {
+    paragrafoDiv.addEventListener('mousedown', function() {
         temporizador = setTimeout(function() {
-            newDiv.remove()
-            delCookies(tituloDiv.textContent)
+            paragrafoDiv.remove()
+            delCookies(paragrafoDiv.textContent)
         }, 1000)
-        newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
+        paragrafoDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
         if (!tarefaConcluida) {
             tarefaConcluida = true
         } else {
@@ -102,12 +104,12 @@ function newElemnt() {
     })
 
     //quando o mouse solta
-    newDiv.addEventListener('mouseup', function() {
+    paragrafoDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
         if (tarefaConcluida) {
-            newDiv.style.background = '#009929'
+            paragrafoDiv.style.background = '#009929'
         }else {
-            newDiv.style.background = '#17f9ff'
+            paragrafoDiv.style.background = '#17f9ff'
         }
     })
 }
