@@ -111,3 +111,5 @@ function newElemnt() {
         }
     })
 }
+
+// arrumar a caixa que esta se mexendo quando passa o mouse
