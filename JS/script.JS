@@ -55,47 +55,45 @@ function newElemnt() {
     let temporizador
     let tarefaConcluida = false
 
-    const newElemnt = document.createElement('div')
+    const newDiv = document.createElement('div')
     const tituloDiv = document.createElement('h2')
     const paragrafoDiv = document.createElement('p')
 
-    const paragrafoTeste = document.createElement('p')
-
-    paragrafoTeste.textContent = titulo.value
-    paragrafoTeste.textContent = descricao.value
+    tituloDiv.textContent = titulo.value
+    paragrafoDiv.textContent = descricao.value
     
-    paragrafoTeste.appendChild(paragrafoTeste)
-    paragrafoTeste.appendChild(paragrafoTeste)
-    main.appendChild(paragrafoTeste)
+    newDiv.appendChild(tituloDiv)
+    newDiv.appendChild(paragrafoDiv)
+    main.appendChild(newDiv)
 
-    paragrafoTeste.style.display = 'none'
+    paragrafoDiv.style.display = 'none'
 
     // quando o mouse entra
-    paragrafoTeste.addEventListener('mouseenter', function() {
-        paragrafoTeste.style.display = 'block'
-        paragrafoTeste.style.display = 'none'
+    newDiv.addEventListener('mouseenter', function() {
+        paragrafoDiv.style.display = 'block'
+        tituloDiv.style.display = 'none'
     })
 
     //quando o mouse sai
-    paragrafoTeste.addEventListener('mouseleave', function() {
-        paragrafoTeste.style.display = 'none'
-        paragrafoTeste.style.display = 'block'
+    newDiv.addEventListener('mouseleave', function() {
+        paragrafoDiv.style.display = 'none'
+        tituloDiv.style.display = 'block'
         clearTimeout(temporizador)
 
         if (tarefaConcluida) {
-            paragrafoTeste.style.background = '#009929'
+            newDiv.style.background = '#009929'
         }else {
-            paragrafoTeste.style.background = '#17f9ff'
+            newDiv.style.background = '#17f9ff'
         }
     })
 
     // quando o mouse é precionado
-    paragrafoTeste.addEventListener('mousedown', function() {
+    newDiv.addEventListener('mousedown', function() {
         temporizador = setTimeout(function() {
-            paragrafoTeste.remove()
-            delCookies(paragrafoTeste.textContent)
+            newDiv.remove()
+            delCookies(tituloDiv.textContent)
         }, 1000)
-        paragrafoTeste.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
+        newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
         if (!tarefaConcluida) {
             tarefaConcluida = true
         } else {
@@ -104,12 +102,12 @@ function newElemnt() {
     })
 
     //quando o mouse solta
-    paragrafoTeste.addEventListener('mouseup', function() {
+    newDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
         if (tarefaConcluida) {
-            paragrafoTeste.style.background = '#009929'
+            newDiv.style.background = '#009929'
         }else {
-            paragrafoTeste.style.background = '#17f9ff'
+            newDiv.style.background = '#17f9ff'
         }
     })
 }
