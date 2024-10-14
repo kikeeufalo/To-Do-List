@@ -56,7 +56,7 @@ function newElemnt() {
     let tarefaConcluida = false
 
     const newDiv = document.createElement('div')
-    const tituloDiv = document.createElement('h2')
+    const tituloDiv = document.createElement('p')
     const paragrafoDiv = document.createElement('p')
 
     tituloDiv.textContent = titulo.value
