@@ -52,6 +52,7 @@ function delCookies(name) {
 }
 
 function newElemnt() {
+    let concluidoTemp
     let temporizador
     let tarefaConcluida = false
 
@@ -101,16 +102,22 @@ function newElemnt() {
 
     //quando o mouse é clicado
     newDiv.addEventListener('click', function() {
-        if (tarefaConcluida) {
-            newDiv.style.background = '#009929'
-        }else {
-            newDiv.style.background = '#17f9ff'
-        }
-
-        if (!tarefaConcluida) {
-            tarefaConcluida = true
-        } else {
-            tarefaConcluida = false
+        let bool = false
+        concluidoTemp = setTimeout(function() {
+            bool = true
+        }, 10)
+        if (bool) {
+            if (!tarefaConcluida) {
+                newDiv.style.background = '#009929'
+            }else {
+                newDiv.style.background = '#17f9ff'
+            }
+    
+            if (!tarefaConcluida) {
+                tarefaConcluida = true
+            } else {
+                tarefaConcluida = false
+            }
         }
     })
 }
