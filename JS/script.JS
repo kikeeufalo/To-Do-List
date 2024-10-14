@@ -82,11 +82,7 @@ function newElemnt() {
         tituloDiv.style.display = 'block'
         clearTimeout(temporizador)
 
-        if (tarefaConcluida) {
-            newDiv.style.background = '#009929'
-        }else {
-            newDiv.style.background = '#17f9ff'
-        }
+
     })
 
     // quando o mouse é precionado
@@ -101,15 +97,16 @@ function newElemnt() {
     //quando o mouse solta
     newDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
+    })
+
+    //quando o mouse é clicado
+    newDiv.addEventListener('click', function() {
         if (tarefaConcluida) {
             newDiv.style.background = '#009929'
         }else {
             newDiv.style.background = '#17f9ff'
         }
-    })
 
-    //quando o mouse é clicado
-    newDiv.addEventListener('click', function() {
         if (!tarefaConcluida) {
             tarefaConcluida = true
         } else {
