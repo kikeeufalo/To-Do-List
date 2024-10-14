@@ -118,6 +118,7 @@ function newElemnt() {
 
 function delTarefaConcluida(x) {
     setTimeout(function(){
-        delCookies(x)
+        
+        alert("apagou")
     }, 10000)
 }
