@@ -62,7 +62,7 @@ function newElemnt() {
     tituloDiv.textContent = titulo.value
     paragrafoDiv.textContent = descricao.value
     
-    tituloDiv.style.fontWeight = '600'
+    tituloDiv.style.fontWeight = 'bold'
 
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
