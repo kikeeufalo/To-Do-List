@@ -111,10 +111,10 @@ function newElemnt() {
         if (!tarefaConcluida) {
             tarefaConcluida = true
 
-            if (!verificador) {
-                verificador = false
+            if (verificador) {
+                verificador = tru
             }else {
-                verificador = true
+                verificador = false
             }
 
             delTarefaConcluida(tituloDiv.textContent)
