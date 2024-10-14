@@ -1,6 +1,7 @@
 let titulo = window.document.getElementById('titulo')
 let descricao = window.document.getElementById('descricao')
 let main = window.document.getElementById('main')
+let verificador = false
 
 function lerTarefas() {
 
@@ -109,6 +110,12 @@ function newElemnt() {
 
         if (!tarefaConcluida) {
             tarefaConcluida = true
+            if (!verificador) {
+                verificador = true
+            }else {
+                verificador = false
+            }
+            
             delTarefaConcluida(tituloDiv.textContent)
         } else {
             tarefaConcluida = false
@@ -118,7 +125,8 @@ function newElemnt() {
 
 function delTarefaConcluida(x) {
     setTimeout(function(){
-        delCookies(x)
-        alert("apagou: ", `${x}`)
+        if (verificador) {
+            delCookies(x)
+        }
     }, 10000)
 }
