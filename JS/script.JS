@@ -96,11 +96,6 @@ function newElemnt() {
             delCookies(tituloDiv.textContent)
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
-        if (!tarefaConcluida) {
-            tarefaConcluida = true
-        } else {
-            tarefaConcluida = false
-        }
     })
 
     //quando o mouse solta
@@ -110,6 +105,15 @@ function newElemnt() {
             newDiv.style.background = '#009929'
         }else {
             newDiv.style.background = '#17f9ff'
+        }
+    })
+
+    //quando o mouse é clicado
+    newDiv.addEventListener('click', function() {
+        if (!tarefaConcluida) {
+            tarefaConcluida = true
+        } else {
+            tarefaConcluida = false
         }
     })
 }
