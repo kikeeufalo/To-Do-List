@@ -109,7 +109,7 @@ function newElemnt() {
 
         if (!tarefaConcluida) {
             tarefaConcluida = true
-            delTarefaConcluida(newDiv)
+            delTarefaConcluida(tituloDiv.textContent)
         } else {
             tarefaConcluida = false
         }
@@ -118,7 +118,7 @@ function newElemnt() {
 
 function delTarefaConcluida(x) {
     setTimeout(function(){
-        
-        alert("apagou")
+        delCookies(x)
+        alert("apagou: ", `${x}`)
     }, 10000)
 }
