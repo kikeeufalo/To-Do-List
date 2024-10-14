@@ -62,11 +62,23 @@ function newElemnt() {
     tituloDiv.textContent = titulo.value
     paragrafoDiv.textContent = descricao.value
     
+    tituloDiv.style.fontWeight = '600'
+
     newDiv.appendChild(tituloDiv)
     newDiv.appendChild(paragrafoDiv)
     main.appendChild(newDiv)
 
     paragrafoDiv.style.display = 'none'
+
+
+    //quando a tarefa é clicada
+    newDiv.addEventListener('click', function(){
+        if (!tarefaConcluida) {
+            tarefaConcluida = true
+        } else {
+            tarefaConcluida = false
+        }
+    })
 
     // quando o mouse entra
     newDiv.addEventListener('mouseenter', function() {
@@ -94,11 +106,6 @@ function newElemnt() {
             delCookies(tituloDiv.textContent)
         }, 1000)
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
-        if (!tarefaConcluida) {
-            tarefaConcluida = true
-        } else {
-            tarefaConcluida = false
-        }
     })
 
     //quando o mouse solta
@@ -110,6 +117,8 @@ function newElemnt() {
             newDiv.style.background = '#17f9ff'
         }
     })
+
+
 }
 
 // arrumar a caixa que esta se mexendo quando passa o mouse
