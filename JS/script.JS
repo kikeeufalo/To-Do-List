@@ -109,8 +109,15 @@ function newElemnt() {
 
         if (!tarefaConcluida) {
             tarefaConcluida = true
+            delTarefaConcluida(newDiv)
         } else {
             tarefaConcluida = false
         }
     })
+}
+
+function delTarefaConcluida(x) {
+    setTimeout(function(){
+        delCookies(x)
+    }, 10000)
 }
