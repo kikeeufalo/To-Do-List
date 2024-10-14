@@ -124,6 +124,8 @@ function newElemnt() {
     })
 }
 
+//lembrar de arruar a funçao de deletar as tarefas concluidas
+
 function delTarefaConcluida(x) {
     setTimeout(function(){
         if (verificador) {
