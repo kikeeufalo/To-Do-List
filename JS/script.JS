@@ -110,12 +110,13 @@ function newElemnt() {
 
         if (!tarefaConcluida) {
             tarefaConcluida = true
+
             if (!verificador) {
-                verificador = true
-            }else {
                 verificador = false
+            }else {
+                verificador = true
             }
-            
+
             delTarefaConcluida(tituloDiv.textContent)
         } else {
             tarefaConcluida = false
@@ -127,6 +128,7 @@ function delTarefaConcluida(x) {
     setTimeout(function(){
         if (verificador) {
             delCookies(x)
+            alert('tarefa deletada')
         }
     }, 10000)
 }
