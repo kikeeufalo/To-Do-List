@@ -96,12 +96,12 @@ function newElemnt() {
         newDiv.style.background = "linear-gradient(90deg, #00b4fc, #005bc5, #012677, #012677, #005bc5, #00b4fc)"
     })
 
-    //quando o mouse solta
+    // Quando o mouse solta
     newDiv.addEventListener('mouseup', function() {
         clearTimeout(temporizador)
     })
 
-    //quando o mouse é clicado
+    // Quando o mouse é clicado
     newDiv.addEventListener('click', function() {
         if (!tarefaConcluida) {
             newDiv.style.background = '#009929'
@@ -120,7 +120,7 @@ function newElemnt() {
     })
 }
 
-//melhorar a função de deletar os cookies
+// Melhorar a função de deletar os cookies
 
 function delTarefaConcluida(x) {
     setTimeout(function(){
