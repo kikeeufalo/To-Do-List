@@ -78,7 +78,7 @@ function newElemnt() {
         tituloDiv.style.display = 'none'
     })
 
-    //quando o mouse sai
+    // Quando o mouse sai
     newDiv.addEventListener('mouseleave', function() {
         paragrafoDiv.style.display = 'none'
         tituloDiv.style.display = 'block'
