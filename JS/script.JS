@@ -87,7 +87,7 @@ function newElemnt() {
 
     })
 
-    // quando o mouse é precionado
+    // Quando o mouse é precionado
     newDiv.addEventListener('mousedown', function() {
         temporizador = setTimeout(function() {
             newDiv.remove()
