@@ -5,14 +5,14 @@ let verificador = false
 
 function lerTarefas() {
 
-    // split divide um item em partes com base no delimitador fornecido 
+    // Split divide um item em partes com base no delimitador fornecido 
     let arrayCookie = document.cookie.split(';') 
     let tituloC = []
     let descricaoC = []
 
     if (document.cookie) {
 
-        // separa por sinal de igualdade
+        // Separa por sinal de igualdade
         arrayCookie.forEach(cookie => {
             let partes = cookie.split('=') 
             tituloC.push(partes[0]) 
