@@ -19,7 +19,7 @@ function lerTarefas() {
             descricaoC.push(partes[1])
         })
 
-        //mostra os cookies de tarefas salvas pegando por indice
+        // Mostra os cookies de tarefas salvas pegando por indice
         for (i = 0; i < arrayCookie.length; i++) { 
             titulo.value = tituloC[i]
             descricao.value = descricaoC[i]
