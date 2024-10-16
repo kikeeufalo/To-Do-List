@@ -48,6 +48,7 @@ function salvar() {
     descricao.value = ''
 }
 
+//atribui uma data de 'validade' ao cookie assim deletando-o
 function delCookies(name) {
     document.cookie = name + '=; Max-Age=0; path=/'
 }
