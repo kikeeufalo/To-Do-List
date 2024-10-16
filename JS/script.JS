@@ -119,6 +119,7 @@ function newElemnt() {
     })
 }
 
+//melhorar a função de deletar os cookies
 
 function delTarefaConcluida(x) {
     setTimeout(function(){
