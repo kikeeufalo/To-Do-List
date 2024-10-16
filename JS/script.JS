@@ -108,7 +108,7 @@ function newElemnt() {
         }else {
             newDiv.style.background = '#17f9ff'
         }
-        
+
         if (!tarefaConcluida) {
             tarefaConcluida = true
             verificador = true
