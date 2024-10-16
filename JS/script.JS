@@ -72,7 +72,7 @@ function newElemnt() {
 
     paragrafoDiv.style.display = 'none'
 
-    // quando o mouse entra
+    // Quando o mouse entra
     newDiv.addEventListener('mouseenter', function() {
         paragrafoDiv.style.display = 'block'
         tituloDiv.style.display = 'none'
